@@ -27,7 +27,7 @@ python -m zipfile -e model-artifacts.zip .
 python -m streamlit run app.py
 ```
 
-먼저 `train.ipynb`에서 기본 실험의 두 CNN을 학습합니다. 브라우저에서 사진을 업로드하고 **분석 시작**을 누릅니다. 첫 분석에서 Hugging Face의 탐지·분리 모델을 받으므로 인터넷 연결과 다운로드 시간이 필요합니다. CNN은 노트북에서 저장한 가중치를 불러옵니다.
+`train.ipynb`에서 기본 실험의 두 CNN을 학습한 뒤 `python -m streamlit run app.py`를 실행합니다. 브라우저에서 사진을 업로드하고 **분석 시작**을 누릅니다. 첫 분석에서 Hugging Face의 탐지·분리 모델을 받으므로 인터넷 연결과 다운로드 시간이 필요합니다. CNN은 노트북에서 저장한 가중치를 불러옵니다.
 
 기본 학습을 재현하려면 저장소 루트에서 `train.ipynb`를 실행합니다. 확대 실험은 기본 실험의 분할 자료를 사용하므로 기본 실험을 완료하고 `expanded_training.ipynb`의 1–4단계를 실행합니다. 다운로드한 사진과 모델 캐시는 로컬에 저장됩니다.
 
